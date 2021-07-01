@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>to_do_list</title>
+	<link rel="stylesheet" type="text/css" href="todo.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+	<div id="fix">
+		<div class="left">
+					<h2>Список дел</h2>
+
+				<p id="del">Список пуст...</p>
+		</div>
+
+		<div id="right">
+					<h2>Добавить новое дело:</h2>
+			<div id='form'><!--Почему при использование тега form некорректно срабатывает функция click-->
+				<p class="rightp">* Название</p>
+				<input type="text" name="name" id="nameinp">
+				<p class="rightp">* Описание</p>
+				<textarea></textarea>
+				<button id="buttonone">Добавить дело</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
