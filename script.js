@@ -1,5 +1,6 @@
 $(function(){
-  $('#buttonone').click(function(){
+  $('#buttonone').click(function(event){
+     event.preventDefault();
      $('#del').css('display','none');
      var inpText = $('#nameinp').val();
      var areaText = $('textarea').val();    
@@ -8,7 +9,7 @@ $(function(){
      $('#nameinp, textarea').val('');
   });
 });
- 
+
      $(document).on('click', '.cross', function(){$(this).parents('.block').remove();
            if($('.block:all').remove()){$('#del').css('display','block');}
      });
